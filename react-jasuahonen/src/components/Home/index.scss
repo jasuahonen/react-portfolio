@@ -1,5 +1,4 @@
 .home-page {
-
     .text-zone {
         position: absolute;
         left: 10%;
@@ -11,42 +10,33 @@
 
     h1 {
         color: whitesmoke;
-        font-size: 50px;
+        font-size: 56px;
+        line-height: 53px;
         margin: 0;
         font-family: 'Coolvetica';
         font-weight: 400;
 
-        &::before {
+        &:before {
             content: '<h1>';
-            font-family: 'La Belle Aurore';
-            color: whitesmoke;
+            font-family: 'La Belle Aurore', cursive;
+            color: #8d8d8d;
             font-size: 18px;
             position: absolute;
             margin-top: -40px;
-            left: 15px;
+            left: -15px;
             opacity: 0.6;
         }
 
-        &::after {
+        &:after {
             content: '<h1/>';
-            font-family: 'La Belle Aurore';
-            color: whitesmoke;
+            font-family: 'La Belle Aurore', cursive;
+            color: #8d8d8d;
             font-size: 18px;
             position: absolute;
-            margin-top: 20px;
-            margin-left: 40px;
+            margin-top: 18px;
+            margin-left: 20px;
             animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
-        }
-
-        img {
-            width: 40px;
-            margin-top: 40;
-            padding-left: 10px;
-            opacity: 0;
-            height: auto;
-            animation: rotateIn 1s linear both;
-            animation-delay: 1.4s;
         }
     }
 
@@ -76,8 +66,8 @@
         white-space: nowrap;
 
         &:hover {
-            background: whitesmoke;
-            color: #8d8d8d;
+            background: #8d8d8d;
+            color: whitesmoke;
         }
     }
 }
