@@ -39,17 +39,21 @@ useEffect(() => {
             />
           </h1>
           <p>
-            I'm a very ambitious 2nd year Software Engineering student looking for my place in the Tech-Industry.
-            Alongside school work I create projects, like this React-portfolio, to showcase my skills and pinpoint my interests.
-            Besides React, my current interests are displayed in the spinning cube on your right!
-          </p>
-          <p align="LEFT">
-            By constantly keeping myself busy on new projects my learning-curve has been steep. I will be
-            adding my projects on this page once they are in a deployable state, stay posted.
+            I’m an ambitious 3rd-year Software Engineering student eager to find my place in the tech industry.
+            Beyond my coursework, I dedicate time to creating projects—like this React portfolio—to highlight my skills
+            and explore my passions.
           </p>
           <p>
-            If I need to define myself in one sentence that pretty much be: "Dog-dad, a sports fanatic,
-            golf-maniac, and tech-obsessed!"
+            My current interests, showcased in the spinning cube to your right,
+            extend beyond React and reflect my drive to stay at the forefront of technology.
+            By consistently working on new projects, I’ve embraced a steep learning curve and continue to grow rapidly.
+          </p>
+          <p>
+            As I refine and finalize my work, I’ll be sharing my projects here—so stay tuned!
+          </p>
+          <p>
+            If I had to sum myself up in one sentence:
+            "Father of a beautiful boy, sports-fanatic, tech-enthusiast, and a golf-addict!"
           </p>
         </div>
 
