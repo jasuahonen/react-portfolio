@@ -1,14 +1,31 @@
+@import '../../variables';
+
 .home-page {
-    .text-zone {
-        position: absolute;
-        left: 10%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40%;
-        max-height: 90%;
+    display: flex;
+    flex-direction: row; // Default: side-by-side layout for desktop
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    padding: 20px;
+
+    @media (max-width: $breakpoint-medium) {
+      flex-direction: column; // Stack elements vertically for medium screens
+      justify-content: flex-start;
+      height: auto;
     }
 
-    h1 {
+    .text-zone {
+      width: 40%; // Maintain width for desktop
+      max-height: 90%;
+
+      @media (max-width: $breakpoint-medium) {
+        width: 80%; // Reduce width for smaller screens
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      h1 {
         color: whitesmoke;
         font-size: 56px;
         line-height: 53px;
@@ -17,30 +34,39 @@
         font-weight: 400;
 
         &:before {
-            content: '<h1>';
-            font-family: 'La Belle Aurore', cursive;
-            color: #8d8d8d;
-            font-size: 18px;
-            position: absolute;
-            margin-top: -40px;
-            left: -15px;
-            opacity: 0.6;
+          content: '<h1>';
+          font-family: 'La Belle Aurore', cursive;
+          color: #8d8d8d;
+          font-size: 18px;
+          position: absolute;
+          margin-top: -40px;
+          left: -15px;
+          opacity: 0.6;
         }
 
         &:after {
-            content: '<h1/>';
-            font-family: 'La Belle Aurore', cursive;
-            color: #8d8d8d;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 18px;
-            margin-left: 20px;
-            animation: fadeIn 1s 1.7s backwards;
-            opacity: 0.6;
+          content: '<h1/>';
+          font-family: 'La Belle Aurore', cursive;
+          color: #8d8d8d;
+          font-size: 18px;
+          position: absolute;
+          margin-top: 18px;
+          margin-left: 20px;
+          animation: fadeIn 1s 1.7s backwards;
+          opacity: 0.6;
         }
-    }
 
-    h2 {
+        @media (max-width: $breakpoint-medium) {
+          font-size: 40px; // Smaller font size for medium screens
+          line-height: 45px;
+        }
+
+        @media (max-width: $breakpoint-small) {
+          font-size: 28px; // Even smaller font size for small screens
+        }
+      }
+
+      h2 {
         color: #8d8d8d;
         margin-top: 20px;
         font-weight: 400;
@@ -48,9 +74,13 @@
         font-family: sans-serif;
         letter-spacing: 2px;
         animation: fadeIn 1s 1.8s backwards;
-    }
 
-    .flat-button {
+        @media (max-width: $breakpoint-small) {
+          font-size: 14px; // Adjust for small screens
+        }
+      }
+
+      .flat-button {
         color: whitesmoke;
         font-size: 13px;
         font-weight: 400;
@@ -60,14 +90,18 @@
         padding: 10px 18px;
         border: 1px solid whitesmoke;
         margin-top: 25px;
-        margin-left: 80px;
-        float: left;
         animation: fadeIn 1s 1.8s backwards;
         white-space: nowrap;
 
         &:hover {
-            background: #8d8d8d;
-            color: whitesmoke;
+          background: #8d8d8d;
+          color: whitesmoke;
         }
+
+        @media (max-width: $breakpoint-medium) {
+          margin-left: 0; // Center align for stacked layout
+          display: inline-block;
+        }
+      }
     }
-}
+  }

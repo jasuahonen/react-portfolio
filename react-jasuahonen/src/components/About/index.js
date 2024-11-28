@@ -44,7 +44,7 @@ useEffect(() => {
             and explore my passions.
           </p>
           <p>
-            My current interests, showcased in the spinning cube to your right,
+            My current interests, showcased in the spinning cube,
             extend beyond React and reflect my drive to stay at the forefront of technology.
             By consistently working on new projects, I’ve embraced a steep learning curve and continue to grow rapidly.
           </p>

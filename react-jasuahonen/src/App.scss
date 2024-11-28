@@ -1,5 +1,5 @@
-$primary-color: whitesmoke;
-
+// Import variables and common styles
+@import 'variables';
 @import 'animate.css';
 @import '~loaders.css/src/animations/pacman.scss';
 
@@ -18,9 +18,10 @@ $primary-color: whitesmoke;
   src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
 }
 
+// Global styles for inputs
 input,
 textarea {
-font-family: 'Helvetica Neue';
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .loader-hidden {
@@ -35,19 +36,33 @@ font-family: 'Helvetica Neue';
   margin: auto;
   top: 0;
   bottom: 0;
-  width: 50px;
-  height: 50px;
+  width: 8vw;
+  height: 8vw;
   animation: fadeOut 1s 1s;
   animation-fill-mode: forwards;
+
+  @media (max-width: $breakpoint-small) {
+    width: 12vw;
+    height: 12vw;
+  }
 }
 
 .App {
   text-align: center;
+  padding: 1rem;
+
+  @media (max-width: $breakpoint-small) {
+    padding: 0.5rem;
+  }
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+
+  @media (max-width: $breakpoint-small) {
+    height: 60vmin;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -65,10 +80,22 @@ font-family: 'Helvetica Neue';
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
+  @media (max-width: $breakpoint-medium) {
+    font-size: calc(8px + 1.5vmin);
+  }
+
+  @media (max-width: $breakpoint-small) {
+    font-size: calc(6px + 1vmin);
+  }
 }
 
 .App-link {
   color: #61dafb;
+
+  @media (max-width: $breakpoint-small) {
+    font-size: 14px;
+  }
 }
 
 @keyframes App-logo-spin {
