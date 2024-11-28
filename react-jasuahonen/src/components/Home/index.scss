@@ -7,17 +7,26 @@
     justify-content: center;
     position: relative;
     height: 100vh;
-    padding: 20px;
+    padding: 40px;
 
     @media (max-width: $breakpoint-medium) {
       flex-direction: column; // Stack elements vertically for medium screens
       justify-content: flex-start;
       height: auto;
+      padding: 30px;
     }
+    @media (max-width: $breakpoint-small) {
+      flex-direction: column; // Stack elements vertically for medium screens
+      justify-content: flex-start;
+      padding: 20px;
+      height: auto;
+    }
+
 
     .text-zone {
       width: 40%; // Maintain width for desktop
       max-height: 90%;
+      padding-left: 60px;
 
       @media (max-width: $breakpoint-medium) {
         width: 80%; // Reduce width for smaller screens
@@ -29,7 +38,6 @@
         color: whitesmoke;
         font-size: 56px;
         line-height: 53px;
-        margin: 0;
         font-family: 'Coolvetica';
         font-weight: 400;
 
@@ -38,9 +46,9 @@
           font-family: 'La Belle Aurore', cursive;
           color: #8d8d8d;
           font-size: 18px;
-          position: absolute;
-          margin-top: -40px;
-          left: -15px;
+          margin-bottom: 18px;
+          margin-right: 20px;
+          animation: fadeIn 1s 1.7s backwards;
           opacity: 0.6;
         }
 
@@ -55,15 +63,6 @@
           animation: fadeIn 1s 1.7s backwards;
           opacity: 0.6;
         }
-
-        @media (max-width: $breakpoint-medium) {
-          font-size: 40px; // Smaller font size for medium screens
-          line-height: 45px;
-        }
-
-        @media (max-width: $breakpoint-small) {
-          font-size: 28px; // Even smaller font size for small screens
-        }
       }
 
       h2 {
@@ -71,6 +70,7 @@
         margin-top: 20px;
         font-weight: 400;
         font-size: 18px;
+        padding-bottom: 30px;
         font-family: sans-serif;
         letter-spacing: 2px;
         animation: fadeIn 1s 1.8s backwards;

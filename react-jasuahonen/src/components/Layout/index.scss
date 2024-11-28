@@ -1,18 +1,15 @@
 @import '../../variables';
 
 .page {
+padding-left: 30px;
 width: 100%;
 height: 100%;
 position: absolute;
 }
 
 .top-tags {
-bottom: auto;
 top: 35px;
-
-@media (max-width: $breakpoint-small) {
-top: 20px;
-}
+margin-left: -20px;
 }
 
 .tags {
@@ -28,6 +25,10 @@ font-family: 'La Belle Aurore', cursive;
 left: 10px;
 font-size: 14px;
 }
+@media (max-width: $breakpoint-medium) {
+    left: 25px;
+    font-size: 16px;
+ }
 }
 
 .bottom-tag-html {
@@ -36,6 +37,9 @@ margin-left: -20px;
 @media (max-width: $breakpoint-small) {
 margin-left: -10px;
 }
+@media (max-width: $breakpoint-medium) {
+    margin-left: -5px;
+    }
 }
 
 .container {

@@ -8,27 +8,40 @@
     margin: auto;
 
     @media (max-width: $breakpoint-medium) {
-      width: 300px; // Scale down for medium screens
+      padding-top: 45px;
+      width: 250px; // Scale down for medium screens
       height: auto;
     }
 
     @media (max-width: $breakpoint-small) {
-      width: 200px; // Scale down further for small screens
+      padding-top: 30px;
+      max-width: 100px; // Scale down further for small screens
     }
 
     svg {
       width: 100%;
       height: auto;
-    }
+      }
 
     .solid-logo {
       position: relative;
-      width: 100%;
+      width: 70%;
       height: auto;
       margin: auto;
+      padding-top: 75px;
+      animation: fadeIn 1s 1.7s backwards;
+
 
       @media (max-width: $breakpoint-medium) {
         margin-bottom: 20px; // Add spacing for stacked layout
+        width: 150px;
+        padding-top: 30px;;
       }
+      @media (max-width: $breakpoint-small) {
+        margin-bottom: 20px; // Add spacing for stacked layout
+        width: 85px;
+        padding-top: 10px;
+      }
+
     }
   }

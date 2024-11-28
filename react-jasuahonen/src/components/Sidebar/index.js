@@ -81,14 +81,13 @@ const Sidebar = () => {
             </li>
         </ul>
         <FontAwesomeIcon
-          onClick={() => setShowNav(true)}
-          icon={faBars}
-          color="#ffd700"
-          size="3x"
-          className='hamburger-icon' />
+        onClick={() => setShowNav(true)}
+        icon={faBars}
+        color="#ffd700"
+        size="3x"
+        className='hamburger-icon' />
     </div>
     )
 }
 
-// sidebar 11:30
 export default Sidebar
