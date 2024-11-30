@@ -55,6 +55,15 @@ useEffect(() => {
             If I had to sum myself up in one sentence:
             "Father of a beautiful boy, sports-fanatic, tech-enthusiast, and a golf-addict!"
           </p>
+
+          <div className='mobile-stack'>
+          <FontAwesomeIcon icon={faJava} color="Darkred" />
+          <FontAwesomeIcon icon={faHtml5} color="Red" />
+          <FontAwesomeIcon icon={faCss3} color="DarkBlue" />
+          <FontAwesomeIcon icon={faReact} color="Lightblue" />
+          <FontAwesomeIcon icon={faJsSquare} color="Yellow" />
+          <FontAwesomeIcon icon={faGithub} color="Black" />
+        </div>
         </div>
 
         <div className="stage-cube-cont">
