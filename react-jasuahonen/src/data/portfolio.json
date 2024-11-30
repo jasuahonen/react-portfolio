@@ -1,0 +1,22 @@
+{
+    "portfolio": [
+        {
+            "cover": "/portfolio/earth-grid.png",
+            "title": "Map-App",
+            "description": "SwiftUI, XCode",
+            "url": "https://github.com/jasuahonen/SwiftUI-MapApp"
+        },
+        {
+            "cover": "/portfolio/task.png",
+            "title": "Task-Manager",
+            "description": "React, CSS",
+            "url": "https://github.com/jasuahonen/task-manager-app"
+        },
+        {
+            "cover": "/portfolio/cloudy-day.png",
+            "title": "Weather-App",
+            "description": "Kotlin for Android",
+            "url": "https://github.com/jasuahonen/MobileAppDev-Kotlin"
+        }
+    ]
+}
