@@ -31,8 +31,9 @@ const Home = () => {
                 <h1>
                 <span className={`${letterClass} _11`}>H</span>
                 <span className={`${letterClass} _12`}>i,</span>
-                <span className={`${letterClass} _13`}>I</span>
-                <span className={`${letterClass} _14`}>'m</span>
+                <span className={`${letterClass} _13`}> </span>
+                <span className={`${letterClass} _14`}>I</span>
+                <span className={`${letterClass} _15`}>'m</span>
                 <AnimatedLetters letterClass={letterClass}
                 strArray={nameArray}
                 idx={15}/>

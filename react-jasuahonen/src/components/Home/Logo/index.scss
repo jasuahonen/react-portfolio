@@ -1,22 +1,9 @@
-@import '../../../variables';
-
 .logo-container {
     z-index: 0;
     width: 400px;
     height: 609px;
     position: relative;
     margin: auto;
-
-    @media (max-width: $breakpoint-medium) {
-      padding-top: 45px;
-      width: 250px; // Scale down for medium screens
-      height: auto;
-    }
-
-    @media (max-width: $breakpoint-small) {
-      padding-top: 30px;
-      max-width: 100px; // Scale down further for small screens
-    }
 
     svg {
       width: 100%;
@@ -30,18 +17,41 @@
       margin: auto;
       padding-top: 75px;
       animation: fadeIn 1s 1.7s backwards;
-
-
-      @media (max-width: $breakpoint-medium) {
-        margin-bottom: 20px; // Add spacing for stacked layout
-        width: 150px;
-        padding-top: 30px;;
-      }
-      @media (max-width: $breakpoint-small) {
-        margin-bottom: 20px; // Add spacing for stacked layout
-        width: 85px;
-        padding-top: 10px;
-      }
-
     }
   }
+
+    /* small screens */
+@media (max-width: 676px) {
+  .logo-container {
+    z-index: 0;
+    width: 280px;
+    height: 400px;
+    position: relative;
+    margin: auto;
+    .solid-logo {
+      position: relative;
+      width: 50%;
+      height: auto;
+      animation: fadeIn 1s 1.7s backwards;
+      padding-left: 50px;
+      margin-top: -10%;
+    }
+  }
+}
+
+/* medium screens */
+@media (min-width: 677px) and (max-width: 880px) {
+  .logo-container {
+    z-index: 0;
+    width: 280px;
+    height: 400px;
+    position: relative;
+    margin: auto;
+    .solid-logo {
+      position: relative;
+      width: 60%;
+      height: auto;
+      margin-top: -10%;
+    }
+  }
+}
