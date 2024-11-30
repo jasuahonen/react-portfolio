@@ -4,7 +4,7 @@ import './index.scss'
 import LogoS from '../../assets/images/logo_s.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faHome, faUser, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 
@@ -81,11 +81,12 @@ const Sidebar = () => {
             </li>
         </ul>
         <FontAwesomeIcon
-        onClick={() => setShowNav(true)}
-        icon={faBars}
-        color="#ffd700"
-        size="3x"
-        className='hamburger-icon' />
+                onClick={() => setShowNav(!showNav)} // Toggle visibility
+                icon={showNav ? faTimes : faBars} // Switch between hamburger and close icon
+                color="#ffd700"
+                size="3x"
+                className='hamburger-icon'
+            />
     </div>
     )
 }
