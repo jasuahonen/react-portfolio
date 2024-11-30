@@ -50,8 +50,10 @@ useEffect(() => {
           </h1>
           <p>
             I am interested in IT-related job opportunities - especially on Junior or on Entry-level.
-            However, if you have any other requests or
-            questions, don't hesitate to contact me using below form.
+            However, if you have any other questions, don't hesitate to contact me using below form.
+            <br />
+            <br />
+            Jasu Ahonen | +358 50 3067267 | jasu.ahonen@outlook.com
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -88,14 +90,6 @@ useEffect(() => {
               </ul>
             </form>
           </div>
-        </div>
-        <div className="info-map">
-          Jasu Ahonen
-          <br />
-          Tampere, 33500 <br />
-          Finland <br />
-
-          <span>jasu.ahonen@outlook.com</span>
         </div>
         <div className="map-wrap">
         <iframe className="mapping" title="kaleva" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7615.856777443109!2d23.789817919095913!3d61.49693719991432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468edf5864f16c95%3A0x2600b5523c196b31!2sKaleva%2C%2033540%20Tampere!5e0!3m2!1sen!2sfi!4v1706911824043!5m2!1sen!2sfi">
